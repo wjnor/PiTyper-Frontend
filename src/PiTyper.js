@@ -209,7 +209,7 @@ const PiTyper = () => {
             {' '}
             leaderboard
           </Link>{' '}
-          | github
+          | <a href="https://github.com/wjnor/PiTyper-Frontend/tree/main" className='github' style={{ textDecoration: 'none' }}>github</a>
         </b>
       </p>
       <Modal isOpen={showPopup} onRequestClose={handlePopupClose} className={`modal ${darkMode ? 'dark-mode' : ''}`} overlayClassName="overlay">

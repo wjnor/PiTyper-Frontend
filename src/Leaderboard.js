@@ -110,9 +110,7 @@ const Leaderboard = () => {
         <Link to="/history-of-pi" style={{ textDecoration: 'none' }}>
         ‎ history of pi |‎
         </Link>
-        <Link to="/github" className="active" style={{ textDecoration: 'none' }}>
-        ‎ github
-        </Link>
+          <a href="https://github.com/wjnor/PiTyper-Frontend/tree/main" className='github' style={{ textDecoration: 'none' }}>‎ github</a>
       </div></b>
       <div className="dark-mode-toggle" onClick={toggleDarkMode} style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', fontSize: '24px' }}>
         {darkMode ? <IoIosMoon /> : <BsSunFill />}

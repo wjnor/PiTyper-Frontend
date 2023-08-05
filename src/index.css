@@ -173,6 +173,14 @@ input[type="number"] {
   color: white
 }
 
+.dark-mode .github {
+  color: white;
+}
+
+.github {
+  color: black;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;

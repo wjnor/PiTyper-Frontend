@@ -1,0 +1,28 @@
+/* 
+   Put your global styles here. 
+   They will apply to all components in your app.
+*/
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* 
+   Add your component-specific styles below this comment. 
+   They will only apply to the components where you import the CSS file.
+*/

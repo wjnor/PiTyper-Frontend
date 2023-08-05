@@ -1,0 +1,383 @@
+h1 {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 100vw;
+}
+
+
+body {
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.leaderboard-difficulty-buttons {
+  color: black;
+}
+
+.submit {
+  border-color: black;
+  color: black;
+  border-radius: 12px;
+}
+.submit:hover,
+.submit.clicked {
+  background-color: #04AA6D;
+  color: black;
+}
+
+.easy {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.easy:hover,
+.easy.clicked {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.medium {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.medium:hover,
+.medium.clicked {
+  background-color: #ff9800;
+  color: white;
+}
+
+.hard {
+  border-color: #f44336;
+  color: red;
+}
+
+.hard:hover,
+.hard.clicked {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.textbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.timer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+input[type="number"] {
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  padding: 10px;
+}
+
+.timer-container {
+  margin-top: 10px;
+}
+
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  background-color: #fff;
+  padding: 15px;
+  width: 35%;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  z-index: 1000;
+  border-radius: .5em;
+  overflow-y: auto;
+}
+
+.history-of-pi {
+  color: black;
+}
+
+
+.dark-mode .history-of-pi {
+  color: white; 
+}
+
+.leaderboard {
+  color: black;
+}
+
+.dark-mode .leaderboard {
+  color: white
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.modal-close:hover {
+  color: darkred;
+}
+
+.close-icon {
+  color: red;
+  font-size: 20px;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .button {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .easy {
+  border-color: #04AA6D;
+  color: #04AA6D;
+}
+
+.dark-mode .easy:hover,
+.dark-mode .easy.clicked {
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+.dark-mode .medium {
+  border-color: #ff9800;
+  color: #ff9800;
+}
+
+.dark-mode .medium:hover,
+.dark-mode .medium.clicked {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.dark-mode .hard {
+  border-color: #f44336;
+  color: #f44336;
+}
+
+.dark-mode .hard:hover,
+.dark-mode .hard.clicked {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.dark-mode .error-message {
+  color: #ff3333;
+}
+
+.dark-mode .timer {
+  color: #fff;
+}
+
+.dark-mode .timer-container {
+  color: #fff;
+}
+
+.dark-mode .ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .ReactModal__Content {
+  background-color: #333;
+}
+
+.dark-mode .modal-close {
+  color: #ff3333;
+  background: transparent;
+  border: none;
+}
+
+.dark-mode .close-icon {
+  color: #ff3333;
+}
+
+.dark-mode .username-input {
+  border: 0;
+}
+
+.dark-mode .submit {
+  border-radius: 12px;
+  background-color: #333;
+  border-color: white;
+  color: white;
+}
+.dark-mode .submit:hover,
+.dark-mode .submit.clicked
+{
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.paragraph-button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.paragraph-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph-container {
+  font-size: 14px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph-text {
+  margin: 0;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
+
+
+.paragraph-button:hover,
+.paragraph-button.active:hover {
+  background-color: #04AA6D;
+  border-color: black;
+  color: black;
+}
+
+.navigation-links a {
+  margin-right: 5px;
+  color: black;
+}
+
+.navigation-links .active {
+  color: black;
+}
+
+.dark-mode .navigation-links a {
+  color: white;
+}
+
+.dark-mode .navigation-links .active {
+  color: #fff;
+}
+
+.dark-mode .paragraph-button {
+  color: white;
+  background: transparent;
+  border-color: white;
+}
+
+.dark-mode .paragraph-button.active {
+  background-color: #04AA6D;
+  border-color: white;
+}
+
+.dark-mode .paragraph-button:hover,
+.dark-mode .paragraph-button.active:hover {
+  background-color: #04AA6D;
+  border-color: white;
+  color: white;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: white;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  color: #fff;
+}
+

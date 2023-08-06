@@ -89,7 +89,7 @@ const HistoryOfPi = () => {
       <b><div className="navigation-links" style={centerStyle}>
         <Link to="/" className="active" style={{textDecoration: 'none'}}>PiTyper | </Link>
         <Link to="/Leaderboard" style={{textDecoration: 'none'}}>‎ leaderboard | </Link>
-        <Link to="/github" className="active" style={{textDecoration: 'none'}}>‎ github</Link>
+        <a href="https://github.com/wjnor/PiTyper-Frontend/tree/main" className='github' style={{ textDecoration: 'none' }}>‎ github</a>
       </div></b>
       <div className="dark-mode-toggle" onClick={toggleDarkMode} style={{ ...centerStyle, marginTop: '.1px', fontSize: '24px' }}>
         {darkMode ? <IoIosMoon /> : <BsSunFill />}

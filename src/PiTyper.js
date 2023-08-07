@@ -9,8 +9,6 @@ import HistoryOfPi from './HistoryOfPi';
 import Leaderboard from './Leaderboard';
 import axios from 'axios';
 
-// axios.defaults.baseURL = 'https://pityper-backend-5d98e8be79da.herokuapp.com:3000';
-
 const PiTyper = () => {
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const [inputVisible, setInputVisible] = useState(true);
